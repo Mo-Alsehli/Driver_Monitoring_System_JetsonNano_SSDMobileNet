@@ -48,6 +48,7 @@ python create_onnx.py \
 ```
 trtexec --onnx=resnet50_onnx_model.onnx --saveEngine=engine.trt
 ```
+- For more information about TRT Engine And Running The Inference: [GOTO](https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/tree/master/RunningEngine)
 
 # Results:
 - Finally our Trt Engine Works on average 20FPS.
