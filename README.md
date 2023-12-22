@@ -52,6 +52,11 @@ trtexec --onnx=resnet50_onnx_model.onnx --saveEngine=engine.trt
 # Results:
 - Finally our Trt Engine Works on average 20FPS.
 
-
+### Resources:
+- [Resource-1](https://github.com/NVIDIA/TensorRT/tree/release/8.2/samples/python/tensorflow_object_detection_api).
+- [Resource-2](https://docs.nvidia.com/deeplearning/tensorrt/quick-start-guide/index.html#export-from-tf).
+- [Resource-3](https://github.com/NVIDIA/TensorRT/blob/main/quickstart/IntroNotebooks/3.%20Using%20Tensorflow%202%20through%20ONNX.ipynb).
+- [Resource-4](https://www.youtube.com/watch?v=yqkISICHH-U&t=16912s).
+- [Resource-5](https://github.com/nicknochnack/TFODCourse).
 
 
