@@ -8,7 +8,10 @@
   - Detect Open Eyes and Closed Eyes.
   - Detect Detect Drowsniss.
   - Detect Phone.
- 
+
+## Project Overview:
+**We have Customized An SSD MobileNet model with our classes and layers to get the desired results.**
+
 ## Technologies:
 - Nvidia Jetson Nano Board.
 - Jetpack: 4.6
@@ -39,8 +42,8 @@ python create_onnx.py \
     --onnx /path/to/save/model.onnx
 ```
 5. Create TRT Engine:
-- NVIDIA® TensorRT™ is an SDK for optimizing trained deep learning models to enable high-performance inference.
-- TensorRT contains a deep learning inference optimizer for trained deep learning models, and a runtime for execution.
+- NVIDIA® TensorRT™ is an SDK for optimizing trained deep-learning models to enable high-performance inference.
+- TensorRT contains a deep learning inference optimizer for trained deep learning models and a runtime for execution.
 - After you have trained your deep learning model in a framework of your choice, TensorRT enables you to run it with higher throughput and lower latency.
 ![image](https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/assets/98949843/fdd9236d-719b-4bfc-b2f4-8b06682f846f)
 - Create TRT Engine:
@@ -50,8 +53,26 @@ trtexec --onnx=resnet50_onnx_model.onnx --saveEngine=engine.trt
 ```
 - For more information about TRT Engine And Running The Inference: [GOTO](https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/tree/master/RunningEngine)
 
+### Labeling Phase:
+![Labeling-phase](https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/assets/98949843/5d439980-d8d2-459d-96f0-1ef0120900a6)
+
+## Dataset Samples
+![dataset-samples](https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/assets/98949843/90417595-35e3-47af-bcb2-92350383e5e2)
+
+## Validation Results
+![Validation Results](https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/assets/98949843/8d0b08e0-ba09-4f06-9b93-72c23af679f1)
+
 # Results:
 - Finally our Trt Engine Works on average 20FPS.
+- 
+### Eyes Opened and closed Detections:
+https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/assets/98949843/8cc592b4-6c37-4ef1-b923-606242de430c
+
+### Phone seatbelt detections:
+https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/assets/98949843/857141d9-51b4-445d-bc18-cfb72a4605e4
+
+### Drowsness Detection:
+https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/assets/98949843/c76d3187-96a7-45df-86a3-e467d769865d
 
 ### Resources:
 - [Resource-1](https://github.com/NVIDIA/TensorRT/tree/release/8.2/samples/python/tensorflow_object_detection_api).
