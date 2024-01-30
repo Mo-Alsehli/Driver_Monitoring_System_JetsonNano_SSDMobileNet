@@ -64,7 +64,7 @@ trtexec --onnx=resnet50_onnx_model.onnx --saveEngine=engine.trt
 
 # Results:
 - Finally our Trt Engine Works on average 20FPS.
-- 
+  
 ### Eyes Opened and closed Detections:
 https://github.com/Mo-Alsehli/Driver_Monitoring_System_JetsonNano_SSDMobileNet/assets/98949843/8cc592b4-6c37-4ef1-b923-606242de430c
 
